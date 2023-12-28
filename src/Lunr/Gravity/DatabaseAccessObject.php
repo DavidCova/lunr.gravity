@@ -279,6 +279,15 @@ abstract class DatabaseAccessObject
         return TRUE;
     }
 
+    /**
+     * Run a defragment operation on a table.
+     *
+     * @param string $table The table to defragment.
+     *
+     * @return void
+     */
+    abstract public function defragment(string $table): void;
+
 }
 
 ?>
